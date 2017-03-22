@@ -57,7 +57,7 @@ class DayView extends CheckedTextView {
 
         setSelectionColor(this.selectionColor);
 
-        setGravity(Gravity.CENTER);
+        // setGravity(Gravity.CENTER);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             setTextAlignment(TEXT_ALIGNMENT_CENTER);
@@ -172,7 +172,7 @@ class DayView extends CheckedTextView {
     @Override
     protected void onDraw(@NonNull Canvas canvas) {
         if (customBackground != null) {
-            customBackground.setBounds(tempRect);
+            // customBackground.setBounds(tempRect);
             customBackground.setState(getDrawableState());
             customBackground.draw(canvas);
         }
